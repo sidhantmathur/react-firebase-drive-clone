@@ -5,14 +5,14 @@ import { Link, useHistory } from "react-router-dom"
 
 export default function Dashboard() {
   const [error, setError] = useState("")
-  const { currentUser, logout } = useAuth()
+  const { currentUser, logOut } = useAuth()
   const history = useHistory()
 
   async function handleLogout() {
     setError("")
 
     try {
-      await logout()
+      await logOut()
       history.push("/login")
     } catch {
       setError("Failed to log out")
