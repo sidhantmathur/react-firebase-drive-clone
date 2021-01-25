@@ -17,8 +17,8 @@ export default function Read() {
   return (
     <div>
       <ul>
-      {people.map(spell => (
-        <li key={spell.name} value={spell.name}></li>
+      {people.map(people => (
+        <li key={people.name} value={people.name}></li>
       ))}
       </ul>
     </div>
