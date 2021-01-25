@@ -1,11 +1,14 @@
 import React, { useRef, Fragment} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function SignUp() {
 
   const emailRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
+
+  const { signUp } = useAuth()
 
   return (
     <Fragment>
