@@ -8,7 +8,7 @@ export default function Read() {
   useEffect(() => {
     const fetchData = async () => {
       const db = firebase.firestore();
-      const data = await db.collection("spells").get();
+      const data = await db.collection("people").get();
       setPeople(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
     };
     fetchData();
