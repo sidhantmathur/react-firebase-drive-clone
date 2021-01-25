@@ -1,26 +1,43 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import firebase from '../../firebase'
 
 export default function Read() {
-
-  const [people, setPeople] = useState([]);
-
+  // const [people, setPeople] = useState([])
   useEffect(() => {
-    const fetchData = async () => {
-      const db = firebase.firestore();
-      const data = await db.collection("people").get();
-      setPeople(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
-    };
-    fetchData();
-  }, []);
+    const db = firebase.firestore();
 
+    db.collection("people").where("birthYear", "<", 2000)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            console.log('multiple', doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
+  
+    var docRef = db.collection("people").doc("3osOyjwkUgUpBR4enVZo");
+
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
+            console.log("Document data:", doc.data());
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
+  
+  },[])
   return (
     <div>
       <ul>
-      {people.map(people => (
-        <li key={people.name} value={people.name}></li>
-      ))}
       </ul>
     </div>
   )
 }
+
