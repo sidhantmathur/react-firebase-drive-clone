@@ -24,10 +24,13 @@ Steps to get started:
 1. Clone this repository to your system.
 2. `npm install`
 3. Create an app on Firebase.
-4. Get the application keys and variables. Put them in a .env.local file in this directory. 
+4. Get the application keys and variables. Put them in a .env.local file in this directory.
 
 Now you are ready to authenticate.
 
-5. Add a collection called "people" with a resource with a string "name" and number "birthYear". 
+5. Add a collection called "people" with a resource with a string "name" and number "birthYear".
 
 Now you are read to read resources.
+
+6. `firebase init` - Set up the firebase hosting service.
+7. `firebase deploy` - Deploy your app!
