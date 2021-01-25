@@ -1,0 +1,39 @@
+[debug] [2021-01-25T02:40:25.530Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T02:40:25.537Z] Command:       /Users/sidhantmathur/.nvm/versions/node/v10.15.0/bin/node /Users/sidhantmathur/.nvm/versions/node/v10.15.0/bin/firebase emulators:start
+[debug] [2021-01-25T02:40:25.538Z] CLI Version:   9.2.2
+[debug] [2021-01-25T02:40:25.538Z] Platform:      darwin
+[debug] [2021-01-25T02:40:25.538Z] Node Version:  v10.15.0
+[debug] [2021-01-25T02:40:25.559Z] Time:          Sun Jan 24 2021 20:40:25 GMT-0600 (Central Standard Time)
+[debug] [2021-01-25T02:40:25.559Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T02:40:25.559Z] 
+[debug] [2021-01-25T02:40:25.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-25T02:40:25.583Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-01-25T02:40:25.624Z] [hub] writing locator at /var/folders/2v/8hd4sfp97c9dl40srl34622h0000gp/T/hub-auth-dev-c52d4.json
+[debug] [2021-01-25T02:40:25.693Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-c52d4/webApps/-/config [none]
+[debug] [2021-01-25T02:40:26.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-c52d4/webApps/-/config 200
+[debug] [2021-01-25T02:40:26.063Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-c52d4/webApps/-/config {"projectId":"auth-dev-c52d4","appId":"1:796483186355:web:a0b857691b88a8d64f4ac6","databaseURL":"https://auth-dev-c52d4-default-rtdb.firebaseio.com","storageBucket":"auth-dev-c52d4.appspot.com","apiKey":"AIzaSyDh8GlrgcZT4MqHi-_X3YQfEfBikhURpVo","authDomain":"auth-dev-c52d4.firebaseapp.com","messagingSenderId":"796483186355"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the ---project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the ---project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET / HTTP/1.1" 200 4437 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET / HTTP/1.1\" 200 4437 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET /static/css/2.150d169a.chunk.css HTTP/1.1" 200 145652 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET /static/css/2.150d169a.chunk.css HTTP/1.1\" 200 145652 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET /static/js/main.23d4e1b7.chunk.js HTTP/1.1" 200 10023 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET /static/js/main.23d4e1b7.chunk.js HTTP/1.1\" 200 10023 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET /static/js/2.44c33e7e.chunk.js HTTP/1.1" 200 396792 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET /static/js/2.44c33e7e.chunk.js HTTP/1.1\" 200 396792 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jan/2021:02:40:30 +0000] \"GET /favicon.ico HTTP/1.1\" 200 3870 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36\""}}
