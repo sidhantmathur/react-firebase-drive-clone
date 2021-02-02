@@ -7,12 +7,16 @@ import PrivateRoute from './components/auth/PrivateRoute'
 import ForgotPassword from './components/auth/ForgotPassword'
 import UpdateProfile from './components/auth/UpdateProfile'
 import Read from './components/crud/Read'
+import Dashboard from "./components/app/Dashboard"
 
 function App() {
   return (
     <Router>
       <AuthProvider>
         <Switch>
+          {/* Application */}
+          <PrivateRoute exact path='/' component={Dashboard} />
+
           {/* Profile */}
           <PrivateRoute path='/user' component={Profile} />
           <PrivateRoute path='/update-profile' component={UpdateProfile} />
