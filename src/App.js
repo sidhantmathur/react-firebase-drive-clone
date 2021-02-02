@@ -1,12 +1,12 @@
-import SignUp from "./components/SignUp"
+import SignUp from "./components/auth/SignUp"
 import { Container } from 'react-bootstrap'
 import { AuthProvider } from './contexts/AuthContext'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Dashboard from './components/Dashboard'
-import LogIn from './components/LogIn'
-import PrivateRoute from './components/PrivateRoute'
-import ForgotPassword from './components/ForgotPassword'
-import UpdateProfile from './components/UpdateProfile'
+import LogIn from './components/auth/LogIn'
+import PrivateRoute from './components/auth/PrivateRoute'
+import ForgotPassword from './components/auth/ForgotPassword'
+import UpdateProfile from './components/auth/UpdateProfile'
 import Read from './components/crud/Read'
 
 function App() {
