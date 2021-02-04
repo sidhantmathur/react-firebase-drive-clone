@@ -12,5 +12,10 @@ const app = firebase.initializeApp({
   appId: process.env.REACT_APP_FIREBASE_APP_ID
 })
 
+const firestore = app.firestore()
+export const database = {
+  folders: firestore.collection('folders'),
+  files: firestore.collection('files')
+}
 export const auth = app.auth()
 export default app
